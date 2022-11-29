@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello Vue</title>
     
-    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3">
+        const MyApp = {
+            data(){
+                    return{
+                        name: "Rebeca"
+                    }
+                }
+            }
+
+        Vue.createApp(MyApp).mount("#app");
+    </script>
     <script src-="src/app.js" defer></script>
 </head>
 <body>
